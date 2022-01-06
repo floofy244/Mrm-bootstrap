@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.4">
+  <title>TinDog</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-3" style="background-color: #856e85;">
+      <div class="container">
+        <a href="#" class="navbar-brand" style="font-family:'Poppins',sans-serif; font-size: 3rem;">TinDog</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto" m-auto>
+            <li class="nav-item">
+              <a href="#footer" class="nav-link">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a href="#pricing" class="nav-link">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a href="#cta" class="nav-link">Download</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Showcase -->
+
+    <section class="text-light p-4 p-lg-0 pt-lg-3 text-center text-sm-start overflow-hidden head">
+      <div class="container">
+        <div class="d-sm-flex align-items-md-center flex-wrap justify-content-space-around m-2">
+          <div class="text-center text-lg-start info">
+            <h1 style="font-family: 'Poppins', sans-serif; font-size:4rem; margin-bottom: 1rem;">Meet new and interesting dogs nearby.</h1>
+            <br>
+            <div>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#enroll" style="background-color: #2c2c2c;"> <i class="fab fa-apple"></i> &nbsp;Download</button>
+            &nbsp;
+            <button type="button" class="btn" style="background-color: #856e85; border:1px solid white; color: white;" data-bs-toggle="modal" data-bs-target="#enroll"> <i class="fab fa-google-play"></i> &nbsp;Download</button>
+          </div>
+          </div>
+          <img class="img-fluid d-none d-sm-block align-top header" src="images/iphone6.png" alt="iphone-mockup"/>
+        </div>
+      </div>
+    </section>
+
+  <!-- Features -->
+
+  <section class="p-5">
+    <div class="container" style="margin-top: 7rem; margin-bottom: 7rem;">
+      <div class="row text-center g-4">
+        <div class="col-md">
+          <div class="card border-light" style="min-width: 25rem;">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="fas fa-check"></i>
+              </div>
+              <h3 class="card-title mb-3" style="font-family: 'Poppins', sans-serif;">Easy to use.</h3>
+              <p class="card-text">
+                <p class="fw-lighter" style="margin-bottom: 0;">So easy to use, even your dog</p>
+                <p class="fw-lighter">could do it.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card border-light" style="min-width: 25rem;">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h3 class="card-title mb-3" style="font-family: 'Poppins', sans-serif;">Elite Clientele</h3>
+              <p class="card-text">
+                <p class="fw-lighter" style="margin-bottom: 0;">We all the dogs, the</p>
+                <p class="fw-lighter">greatest dogs.</p>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card border-light" style="min-width: 25rem;">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="fas fa-heart"></i>
+              </div>
+              <h3 class="card-title mb-3" style="font-family: 'Poppins', sans-serif;">Guaranteed to work.</h3>
+              <p class="card-text">
+                <p class="fw-lighter" style="margin-bottom: 0;">Find the love of your dog's life or</p>
+                <p class="fw-lighter">your money back</p>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="background-color: #c8a8c8; height: 50%; padding-top: 7rem; padding-bottom: 5rem;">
+    <div class="carousel-inner">
+      <div class="carousel-item active text-center text-light">
+        <h2 style="margin-left: 14rem; margin-right: 14rem; margin-bottom: 2.5rem; font-family: 'Poppins', sans-serif; font-size: 2.5rem;">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+        <img src="images/dog-img.jpg" alt="dog-profile" style="width: 100px; border-radius: 50%;">&nbsp;&nbsp;
+        <em>Pebbles, New York</em>
+      </div>
+      <div class="carousel-item text-center text-light">
+        <h2 style="margin-left: 14rem; margin-right: 14rem; margin-bottom: 2.5rem; font-family: 'Poppins', sans-serif; font-size: 2.5rem;" class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+        <img class="testimonial-image " src="images/lady-img.jpg" alt="lady-profile" style="width: 100px; border-radius: 50%;">&nbsp;&nbsp;
+        <em>Beverly, Illinois</em>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+  <!-- Press -->
+
+  <section id="press" style=" background-color: #c8a8c8; padding-top: 6rem; padding-bottom: 6rem;">
+    <div class="container" style="max-width: 800px;">
+      <div class="row align-items-center text-center">
+        <div class="col">
+          <img src="images/TechCrunch.png" alt="tc-logo" style="width: 10rem">
+        </div>
+        <div class="col">
+          <img src="images/tnw.png" alt="tnw-logo" style="width: 10rem">
+        </div>
+        <div class="col">
+          <img src="images/bizinsider.png" alt="biz-insider-logo" style="width: 10rem">
+        </div>
+        <div class="col">
+          <img src="images/mashable.png" alt="mashable-logo" style="width: 10rem">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Pricing -->
+
+  <section id="pricing" class="p-5 bg-white">
+    <div class="container" style="margin-top: 6rem; margin-bottom: 6rem;">
+      <h2 class="text-center text-dark fs-1" style="font-family: 'Poppins', sans-serif;">A Plan for Every Dog's Needs</h2>
+      <p class="lead text-center text-dark mb-5 fs-6 fw-light">
+        Simple and affordable price plans for your and your dog.
+      </p>
+      <div class="row text-center g-5">
+        <div class="col-md">
+          <div class="card border-light" style="min-width: 20%;">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <h3 class="fw-lighter" style="font-family: 'Poppins', sans-serif; margin-bottom: 3rem;">Chihuahua</h3>
+              </div>
+              <h1 class="card-title mb-3" style="font-family: 'Poppins', sans-serif;">Free</h1>
+              <p class="card-text">
+                <p class="fw-lighter">5 Matches Per Day</p>
+                <p class="fw-lighter">10 Messages Per Day</p>
+                <p class="fw-lighter">Unlimited App Usage</p>
+              </p>
+              <div class="d-grid gap-2">
+                <button class="btn btn-dark" type="button">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card border-light" style="min-width: 18rem;">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <h3 class="fw-lighter" style="font-family: 'Poppins', sans-serif; margin-bottom: 3rem;">Labrador</h3>
+              </div>
+              <h1 class="card-title mb-3" style="font-family: 'Poppins', sans-serif;">$49 / mo</h1>
+              <p class="card-text">
+                <p class="fw-lighter">Unlimited Matches</p>
+                <p class="fw-lighter">Unlimited Messages</p>
+                <p class="fw-lighter">Unlimited App Usage</p>
+              </p>
+              <div class="d-grid gap-2">
+                <button class="btn btn-dark" type="button">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card border-light" style="min-width: 18rem;">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <h3 class="fw-lighter" style="font-family: 'Poppins', sans-serif; margin-bottom: 3rem;">Mastiff</h3>
+              </div>
+              <h1 class="card-title mb-3" style="font-family: 'Poppins', sans-serif;">$99 / mo</h1>
+              <p class="card-text">
+                <p class="fw-lighter">Pirority Listing</p>
+                <p class="fw-lighter">Unlimited Matches</p>
+                <p class="fw-lighter">Unlimited Messages</p>
+                <p class="fw-lighter">Unlimited App Usage</p>
+              </p>
+              <div class="d-grid gap-2 ">
+                <button class="btn btn-dark" type="button">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+
+  <section class="p-6" id="cta" style="background-color: #856e85; height: 27.1rem;">
+    <div class="container-2">
+    <h3 class="text-center text-light" style="font-size: 3rem; margin-bottom: 40px; font-family: 'Poppins', sans-serif;">Find the True Love of Your Dog's Life Today.</h3>
+    <div class="text-center">
+    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#enroll" style="margin: 10px;"> <i class="fab fa-apple"></i> &nbsp;Download</button>
+            &nbsp;
+            <button type="button" class="btn btn-light" style="margin: 10px;" data-bs-toggle="modal" data-bs-target="#enroll"> <i class="fab fa-google-play"></i> &nbsp;Download</button>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="p-3 bg-white text-dark text-center position-relative" id="footer" style="height: 20rem;">
+    <div class="container container-1">
+      <div class="socials">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+    </div>
+      <p class="fw-lighter" style="margin-top: 10px;">© Copyright 2018 TinDog</span></p>
+    </div>
+  </footer>
+
+  <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+  ></script>
+
+
+</body>
+
+</html>
